@@ -1,0 +1,219 @@
+
+body {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	line-height:30px;
+	color:#777;
+}
+
+li {
+	color:  #404040;
+}
+
+.floatRight{
+    float: right;
+}
+
+.paddingRight15em{
+padding-right: 15em;
+}
+
+.paddingTop3em{
+padding-top: 3em;
+}
+
+.alignCenter{  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.marquee {
+    -webkit-animation: rightThenLeft 4s linear;
+}
+
+#myPanel1{
+	background-color:rgba(146, 190, 212, 0.8);
+	font-size: 2em;
+	border: medium none !important;
+
+}
+
+#myPanel2{
+	background-color:rgba(146, 190, 212, 0.8);
+	font-size: 2em;
+}
+
+#myPanel3{
+	background-color:rgba(146, 190, 212, 0.8);
+	font-size: 2em;
+}
+
+
+#flamesDiv {
+	background: rgba(146, 190, 212, 0.6);
+	padding:23px;
+	margin:45px 0;
+}
+
+#choice h3 {
+	color: #F96;
+	display: block;
+	font-size: 28px;
+	font-weight: 400;
+	text-shadow: 2px 2px 2px gray;
+}
+#flamesDiv h3 {
+	color: #F96;
+	display: block;
+	font-size: 28px;
+	font-weight: 400;
+	text-shadow: 2px 2px 2px gray;
+}
+
+#flamesDiv h4 {
+	color: darkslategray;
+	display: block;
+	font-weight: 400;
+}
+
+#flamesDiv input[type="text"], 
+#flamesDiv input[type="email"], 
+#flamesDiv input[type="tel"], 
+#flamesDiv textarea {
+	 width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact {
+	background: rgba(146, 190, 212, 0.6);
+	padding:23px;
+	margin:45px 0;
+}
+
+#choice {
+	background: rgba(146, 190, 212, 0.6);
+	padding:23px;
+	margin:45px 0;
+}
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 28px;
+	font-weight: 400;
+	text-shadow: 2px 2px 2px gray;
+}
+
+#contact h4 {
+	color: darkslategray;
+	display: block;
+	font-weight: 400;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#calculateButton {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#calculateButton:hover {
+    background-color: #45a049;
+	color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact input[type="text"], 
+#contact input[type="email"], 
+#contact input[type="tel"], 
+#contact textarea {
+	 width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#myContactRow1{
+	padding-top: 2em;
+}
+
+#myContactRow2{
+	padding-top: 2em;
+}
+
+#myDetails h3 {
+	color: #F96;
+	display: block;
+	font-size: 28px;
+	font-weight: 400;
+	text-shadow: 1px 1px 2px gray;
+}
+
+#h2ID{
+	color: gdimgray;
+	display: block;
+	font-size: 28px;
+	font-weight: 400;
+	text-shadow: 1px 1px 2px gray;
+}
+
+.jumbotronBackground{
+	background-color: rgba(146, 190, 212, 0.6);
+}
+
+iframe{
+    border-width: 0px;
+}
+
+.container span.checkbox::before {
+  width: 27px;
+  height: 27px;
+  background-color: #fff;
+  left: -35px;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  transition: border-color .2s;
+}
+.container span.checkbox:hover::before {
+  border: 3px solid #F0FF76;
+}
+.container span.checkbox::after {
+  content: '\f00c';
+  font-family: 'FontAwesome';
+  left: -31px;
+  top: 2px;
+  color: transparent;
+  transition: color .2s;
+}
+input[type="checkbox"]:checked + label span.checkbox::after {
+  color: #62AFFF;
+}
+
+
+
+
+
