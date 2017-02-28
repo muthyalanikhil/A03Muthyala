@@ -5,7 +5,10 @@
     "main": "server.js",
     "dependencies": {
         "express": "latest",
-        "socket.io": "latest"
+        "morgan": "latest",
+        "body-parser": "latest",
+        "ejs": "latest",
+        "mailgun-js": "latest"
     },
     "author": "nikhil muthyala",
     "homepage": "https://github.com/muthyalanikhil/A03Muthyala.git",
@@ -13,5 +16,5 @@
         "type": "git",
         "url": "https://github.com/muthyalanikhil/A03Muthyala.git"
     },
-     "license": "Apache-2.0"
+    "license": "Apache-2.0"
 }

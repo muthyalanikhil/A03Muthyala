@@ -1,19 +1,46 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $("#resultDiv").hide();
     $("#flamesDiv").hide();
 });
 
-$(document).ready(function(){
-    $('input[type="checkbox"]').click(function(){
-        if($(this).attr("value")=="myCheckBox"){
+$(document).ready(function () {
+    $('input[type="checkbox"]').click(function () {
+        if ($(this).attr("value") == "myCheckBox") {
             $("#flamesDiv").toggle();
         }
     });
 });
+
+$(document).ready(function() {
+  $('body').addClass('js');
+  var $menu = $('#menu'),
+    $menulink = $('.menu-link');
+  
+$menulink.click(function() {
+  $menulink.toggleClass('active');
+  $menu.toggleClass('active');
+  return false;
+});});
+
+var navigateTo = {
+    homePage: function () {
+        window.location.href = '/'
+    },
+    myWorksPage: function () {
+        window.location.href = '/myWorks'
+    },
+    contactsPage: function () {
+        window.location.href = '/contact'
+    },
+    gbAppPage: function () {
+        window.location.href = '/index'
+    }
+}
+
 var myApp = {
 
     launch: function () {
-        myApp.calculateFlames();      
+        myApp.calculateFlames();
         myApp.updateResult();
     },
 

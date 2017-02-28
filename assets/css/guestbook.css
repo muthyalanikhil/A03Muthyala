@@ -1,0 +1,13 @@
+.panel-default > .panel-heading {
+    background-color:rgba(0, 216, 116, 0.38) !important;
+}
+.panel-body {
+    background-color: rgba(0, 216, 116, 0.08);
+}
+
+#bodyBackground{
+     background-color: rgba(105, 169, 140, 0.4);
+}
+.panel-default {
+     border-color: #8ebba6 !important;
+}

@@ -11,90 +11,98 @@
   <link rel="stylesheet" href="css/myStyles.css">
   <title>Contact</title>
 </head>
-<body style="background-image: url(img/background_3.jpg)">
-<div class="container-fluid">
-   <nav class="navbar navbar-default">
-    <div class="container-fluid">
-       <div class="navbar-header">
-      <a class="navbar-brand" href="home.html">Nikhil</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li ><a href="home.html">Home</a></li>
-      <li><a href="myWorks.html">My Works</a></li>
-      <li class="active"><a href="contact.html">Contact</a></li>
-    </ul>
-    </div>
-  </nav>
 
-  <div class="container">
-    <div class="row" id="contact">
-      <div class="col-md-6 col-sm-12">
-        <form method="post">
-          <h3>To Ask Me Something..!!!</h3>
-          <hr>
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <fieldset>
-                <input placeholder="Name" type="text">
-              </fieldset>
-              <fieldset>
-                <input placeholder="Email Address" type="email">
-              </fieldset>
-              <fieldset>
-                <input placeholder="Phone Number" type="tel">
-              </fieldset>
-              <fieldset>
-                <textarea placeholder="Type your Message Here...."></textarea>
-              </fieldset>
-              <fieldset>
-                <button type="button" class="btn btn-success" name="submit" id="contact-submit">Submit..!!</button>
-              </fieldset>
+<body style="background-image: url(img/background_3.jpg)">
+  <div class="container-fluid">
+    <div id="pattern" class="pattern">
+      <nav class="navbar navbar-default" id="menu" role="navigation">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#" onclick="navigateTo.homePage()">Nikhil</a>
+          <a href="#menu" class="menu-link">Menu</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#" onclick="navigateTo.homePage()">Home</a></li>
+          <li><a href="#" onclick="navigateTo.myWorksPage()">My Works</a></li>
+          <li class="active"><a href="#">Contact</a></li>
+          <li><a href="#" onclick="navigateTo.gbAppPage()">Guest Book</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row" id="contact">
+        <div class="col-md-6 col-sm-12">
+          <form method="post">
+            <h3>To Ask Me Something..!!!</h3>
+            <hr>
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+                <fieldset>
+                  <input name="userName" id="userName" placeholder="Name" type="text" required>
+                </fieldset>
+                <fieldset>
+                  <input name="email" id="email" placeholder="Email Address" type="email" required>
+                </fieldset>
+                <fieldset>
+                  <input name="phoneNumber" id="phoneNumber" placeholder="Phone Number" type="tel" required>
+                </fieldset>
+                <fieldset>
+                  <input name="subject" id="subject" placeholder="Subject" type="text" required>
+                </fieldset>
+                <fieldset>
+                  <textarea name="body" id="body" placeholder="Type your Message Here...." required></textarea>
+                </fieldset>
+                <fieldset>
+                  <button type="submit" class="btn btn-success" name="submit" id="contact-submit">Send Email..!!</button>
+                </fieldset>
+              </div>
             </div>
-          </div>
-        </form>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div>
-          <h3>To Contact Me</h3>
-          <hr>
-          <div class="row" id="myContactRow1">
-            <div class="col-md-4 col-sm-12">
-              <a href="https://github.com/muthyalanikhil" target="_blank"><img src="img/gitHubIcon.png" alt="GitHub" width="75" height="75"></a>
-              <h5>GitHub..!!</h5>
+          </form>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div>
+            <h3>To Contact Me</h3>
+            <hr>
+            <div class="row" id="myContactRow1">
+              <div class="col-md-4 col-sm-12">
+                <a href="https://github.com/muthyalanikhil" target="_blank"><img src="img/gitHubIcon.png" alt="GitHub" width="75" height="75"></a>
+                <h5>GitHub..!!</h5>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <a href="https://bitbucket.org/nikhilmuthyala" target="_blank"><img src="img/bitBucketIcon.png" alt="bitbucket" width="75" height="75"></a>
+                <h5>bitbucket..!!</h5>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <a href="https://www.linkedin.com/in/nikhil-muthyala-980696112" target="_blank"><img src="img/linkedinIcon.png" alt="linkedin" width="75" height="75"></a>
+                <h5>linkedin..!!</h5>
+              </div>
             </div>
-            <div class="col-md-4 col-sm-12">
-              <a href="https://bitbucket.org/nikhilmuthyala" target="_blank"><img src="img/bitBucketIcon.png" alt="bitbucket" width="75" height="75"></a>
-              <h5>bitbucket..!!</h5>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <a href="https://www.linkedin.com/in/nikhil-muthyala-980696112" target="_blank"><img src="img/linkedinIcon.png" alt="linkedin" width="75" height="75"></a>
-              <h5>linkedin..!!</h5>
-            </div>
-          </div>
-          <div class="row" id="myContactRow2">
-            <div class="col-md-4 col-sm-12">
-              <a href="https://www.facebook.com/nikhil.muthyala.1" target="_blank"><img src="img/facebookIcon.png" alt="facebook" width="75" height="75"></a>
-              <h5>facebook</h5>
+            <div class="row" id="myContactRow2">
+              <div class="col-md-4 col-sm-12">
+                <a href="https://www.facebook.com/nikhil.muthyala.1" target="_blank"><img src="img/facebookIcon.png" alt="facebook" width="75" height="75"></a>
+                <h5>facebook</h5>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <hr>
+
+    <footer>
+      <p>&copy; nikhil muthyala 2017</p>
+    </footer>
   </div>
+  <!-- /container -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+                                   window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+  </script>
 
-  <hr>
+  <script src="js/vendor/bootstrap.min.js"></script>
 
-  <footer>
-    <p>&copy; nikhil muthyala 2017</p>
-  </footer>
-</div>
-<!-- /container -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-<script src="js/vendor/bootstrap.min.js"></script>
-
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
