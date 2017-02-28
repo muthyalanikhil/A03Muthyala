@@ -5,94 +5,97 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="css/myStyles.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="assets/css/myStyles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <title>My Works</title>
 </head>
-<body style="background-image: url(img/background_3.jpg)">
-<div class="container-fluid">
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-       <div class="navbar-header">
-      <a class="navbar-brand" href="home.html">Nikhil</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li ><a href="home.html">Home</a></li>
-      <li class="active"><a href="myWorks.html">My Works</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    </div>
-  </nav>
 
-  <div class="container">
-    <div class="row" id="choice">
-      <div class="checkbox">
-        <label style="font-size: 2.5em">
+<body style="background-image: url(assets/img/background_3.jpg)">
+  <div class="container-fluid">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="assets/home.html">Nikhil</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="assets/home.html">Home</a></li>
+          <li class="active"><a href="assets/myWorks.html">My Works</a></li>
+          <li><a href="assets/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row" id="choice">
+        <div class="checkbox">
+          <label style="font-size: 2.5em">
 <input type="checkbox" id="checkboxID" value="myCheckBox">
 <span></span> To Check Flames, Please check the checkbox.
 </label>
-</div>
-</div>
-<div class="row" id="flamesDiv">
-  <div class="col-md-6 col-sm-12">
-    <form method="post">
-      <h3>Check FLAMES here..!!</h3>
-      <hr>
-      <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Your Gender
-        <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-          <li><a href="#">Male</a></li>
-          <li><a href="#">Female</a></li>
-        </ul>
+        </div>
       </div>
-      <fieldset>
-        <span id="first"></span>
-        <span id="second"></span><br/>
-        <input id="firstName" placeholder="first person name here" type="text">
-      </fieldset>
-      <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Your Friends Gender
+      <div class="row" id="flamesDiv">
+        <div class="col-md-6 col-sm-12">
+          <form method="post">
+            <h3>Check FLAMES here..!!</h3>
+            <hr>
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Your Gender
         <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-          <li><a href="#">Male</a></li>
-          <li><a href="#">Female</a></li>
-        </ul>
+              <ul class="dropdown-menu">
+                <li><a href="#">Male</a></li>
+                <li><a href="#">Female</a></li>
+              </ul>
+            </div>
+            <fieldset>
+              <span id="first"></span>
+              <span id="second"></span><br/>
+              <input id="firstName" placeholder="first person name here" type="text">
+            </fieldset>
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Your Friends Gender
+        <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Male</a></li>
+                <li><a href="#">Female</a></li>
+              </ul>
+            </div>
+            <fieldset>
+              <input id="secondName" placeholder="second person name here" type="text">
+            </fieldset>
+            <fieldset>
+              <button type="button" onclick="myApp.launch()" class="btn btn-success" name="submit" id="calculateButton">Calculate..!!</button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="col-md-6 col-sm-12" id="resultDiv">
+          <h3 id="h3ID">Your result here...!!!</h3>
+          <hr>
+          <h2 class="paddingTop3em" id="h2ID">Relation between you and your friend: <br/>
+            <span id="result"></span></h2><span></span>
+        </div>
       </div>
-      <fieldset>
-        <input id="secondName" placeholder="second person name here" type="text">
-      </fieldset>
-      <fieldset>
-        <button type="button" onclick="myApp.launch()" class="btn btn-success" name="submit" id="calculateButton">Calculate..!!</button>
-</fieldset>
-</form>
-</div>
-<div class="col-md-6 col-sm-12" id="resultDiv">
-  <h3 id="h3ID">Your result here...!!!</h3>
-  <hr>
-  <h2 class="paddingTop3em" id="h2ID">Relation between you and your friend: <br/>
-    <span id="result"></span></h2><span></span>
-</div>
-</div>
-</div>
+    </div>
 
-<hr>
+    <hr>
 
-<footer>
-  <p>&copy; nikhil muthyala 2017</p>
-</footer>
-</div>
-<!-- /container -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <footer>
+      <p>&copy; nikhil muthyala 2017</p>
+    </footer>
+  </div>
+  <!-- /container -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+  </script>
 
-<script src="js/vendor/bootstrap.min.js"></script>
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
 
-<script src="js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

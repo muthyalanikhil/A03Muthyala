@@ -1,0 +1,17 @@
+{
+    "name": "a03",
+    "version": "0.0.1",
+    "description": "Personal Website",
+    "main": "server.js",
+    "dependencies": {
+        "express": "latest",
+        "socket.io": "latest"
+    },
+    "author": "nikhil muthyala",
+    "homepage": "https://github.com/muthyalanikhil/A03Muthyala.git",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/muthyalanikhil/A03Muthyala.git"
+    },
+     "license": "Apache-2.0"
+}
