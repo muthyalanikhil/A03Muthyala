@@ -6,6 +6,8 @@ var logger = require("morgan");
 var bodyParser = require("body-parser");
 var http = require('http').Server(app); 
 
+/////////////////////////////////////////////////////////////////////////////
+
 app.use(express.static(__dirname + '/assets'));
 
 app.set("views", path.resolve(__dirname, "views"));
@@ -85,3 +87,4 @@ app.use(function (request, response) {
 app.listen(8081, function () {
   console.log('listening on http://127.0.0.1:8081/');
 });
+/////////////////////////////////////////////////////////////////////////////
