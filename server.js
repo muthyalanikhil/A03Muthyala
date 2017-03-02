@@ -57,7 +57,7 @@ var domain = 'sandboxaf916e19326342628f609667593b8db0.mailgun.org';
 var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
  
 var data = {
-  from: 'Nik <postmaster@sandboxaf916e19326342628f609667593b8db0.mailgun.org>',
+  from: 'Nikil <postmaster@sandboxaf916e19326342628f609667593b8db0.mailgun.org>',
   to: request.body.email,
   subject: request.body.subject,
   text: request.body.body

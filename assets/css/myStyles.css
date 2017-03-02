@@ -13,6 +13,11 @@ li {
     float: right;
 }
 
+.menuFloatRight{
+	float: right !important;
+    padding-right: 2em !important;
+}
+
 .floatLeft{
     float: left;
 }
