@@ -67,7 +67,7 @@ var myApp = {
         var a = $('#firstName').val();
         var b = $('#secondName').val();
         var count = myApp.calculateCommonCharecters(a, b).length;
-        var value; 
+        var value;
         if (count == 3 || count == 5) {
             value = "FRIENDSHIP";
         } else if (count == 10) {

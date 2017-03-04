@@ -4,7 +4,7 @@ var app = express();
 var path = require("path");
 var logger = require("morgan");
 var bodyParser = require("body-parser");
-var http = require('http').Server(app); 
+var http = require('http').Server(app);
 
 /////////////////////////////////////////////////////////////////////////////
 
@@ -21,16 +21,16 @@ app.use(logger("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 /////////////////////////////////////////////////////////////////////////////
-app.get('/',function(req,res){
-  res.sendFile(path.join(__dirname+'/assets/home.html'));
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname + '/assets/home.html'));
 });
 
-app.get('/contact',function(req,res){
-  res.sendFile(path.join(__dirname+'/assets/contact.html'));
+app.get('/contact', function (req, res) {
+  res.sendFile(path.join(__dirname + '/assets/contact.html'));
 });
 
-app.get('/myWorks',function(req,res){
-  res.sendFile(path.join(__dirname+'/assets/myWorks.html'));
+app.get('/myWorks', function (req, res) {
+  res.sendFile(path.join(__dirname + '/assets/myWorks.html'));
 });
 
 app.get("/index", function (request, response) {
@@ -46,32 +46,32 @@ app.post("/new-entry", function (request, response) {
     response.status(400).send("Entries must have a title and a body.");
     return;
   }
-  entries.push({ 
+  entries.push({
     title: request.body.title,
     content: request.body.body,
     published: new Date()
   });
-  response.redirect("/index"); 
+  response.redirect("/index");
 });
 app.post("/contact", function (request, response) {
-var api_key = 'key-638540938604d9c1045f5cb5229ed36e';
-var domain = 'sandboxaf916e19326342628f609667593b8db0.mailgun.org';
-var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
- 
-var data = {
-  from: 'Nikil <postmaster@sandboxaf916e19326342628f609667593b8db0.mailgun.org>',
-  to: request.body.email,
-  subject: request.body.subject,
-  text: request.body.body
-};
- 
-mailgun.messages().send(data, function (error, body) {
-  console.log(body);
-  if(!error)
-  response.send("Mail sent..!!");
-  else
-  response.send("Mail not sent..!!");
-});
+  var api_key = 'key-638540938604d9c1045f5cb5229ed36e';
+  var domain = 'sandboxaf916e19326342628f609667593b8db0.mailgun.org';
+  var mailgun = require('mailgun-js')({ apiKey: api_key, domain: domain });
+
+  var data = {
+    from: 'Nikil <postmaster@sandboxaf916e19326342628f609667593b8db0.mailgun.org>',
+    to: request.body.email,
+    subject: request.body.subject,
+    text: request.body.body
+  };
+
+  mailgun.messages().send(data, function (error, body) {
+    console.log(body);
+    if (!error)
+      response.send("Mail sent..!!");
+    else
+      response.send("Mail not sent..!!");
+  });
 });
 //////////////////////////////////////////////////////////////////////////////
 
